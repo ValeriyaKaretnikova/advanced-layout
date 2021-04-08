@@ -1,0 +1,293 @@
+:root {
+  --navy: #344256;
+  --yellow: #f3d900;
+  --offWhite: #f9f8f7;
+  --offBlack: #1a212b;
+  --borderGrey: #d3d3d3;
+  --bgGrey: #eaedef;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: var(--offBlack);
+}
+
+.inner-container {
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Typography */
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--navy);
+  line-height: 39.6px;
+}
+h3 {
+  color: var(--navy);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+h4{
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+p {
+  padding: 1rem 0;
+}
+
+/* Header */
+.hamburger-btn {
+  background-color: var(--yellow);
+  border-radius: 50%;
+  border: none;
+  padding: 1.125rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+button,
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+header div.flex {
+  padding: 0.5rem 0.8125rem 0.5rem 1.5rem;
+  box-shadow: 0px 3px 3px 0px var(--bgGrey);
+}
+header nav li {
+  border-bottom: 1px solid var(--borderGrey);
+}
+header nav {
+  border-top: 1px solid var(--borderGrey);
+  margin: 1.5rem 0 3rem;
+}
+.toggle-nav {
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #f9f8f7;
+  left: 0;
+  width: 100%;
+  transition: all 0.7s ease-in-out;
+}
+.show-nav {
+  max-height: 100vh;
+}
+.menu li a {
+  text-decoration: none;
+  color: var(--navy);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 2;
+  padding-left: 1.5rem;
+  display: block;
+}
+
+/* Banner Search */
+
+input {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid var(--navy);
+  border-right: none;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+.magnifying-glass {
+  border: none;
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--navy);
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.search form {
+  margin-top: 3px;
+}
+
+/* Section Network */
+.network {
+  background-color: var(--navy);
+}
+/* Philosophy */
+.philosophy h2,
+.philosophy p {
+  color: white;
+}
+a svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--navy);
+}
+.utility-button {
+  margin: 0.5rem 0 1.5rem;
+}
+.utility-button a {
+  text-decoration: none;
+  color: var(--navy);
+  background-color: var(--yellow);
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* Articles */
+.articles {
+  background-color: white;
+  border-radius: 10px;
+}
+article {
+  padding: 3rem 0.5rem 0;
+}
+article a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--navy);
+  border-bottom: 2px solid var(--yellow);
+}
+article:last-of-type {
+  padding-bottom: 3rem;
+}
+
+/* What we Do */
+.what-we-do {
+  padding: 3rem 1.5rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none; 
+ 
+}
+.row::-webkit-scrollbar{
+  background: transparent;
+  width: 0;
+}
+
+.row:first-of-type {
+  margin: 0.5rem 0 1.25rem;
+}
+.row div {
+  display: flex;
+  margin-right: 1.5rem;
+}
+.row div:first-of-type {
+  flex: 0 0 198px;
+}
+.row div:nth-of-type(2) {
+  flex: 0 0 235px;
+}
+.row div:nth-of-type(3) {
+  flex: 0 0 208px;
+}
+.row div:nth-of-type(4) {
+  flex: 0 0 227px;
+}
+.row div p {
+  color: var(--navy);
+  font-weight: bold;
+}
+.row div img {
+  border-radius: 10px;
+  margin-right: 0.5rem;
+}
+
+/* Need Us */
+.need-us {
+  background-color: var(--bgGrey);
+}
+.cards {
+  margin-top: 0.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  box-shadow: 0px 3px 6px 0px var(--borderGrey);
+}
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+.card-body {
+  padding: 1.2rem 0.5rem 0.5rem;
+}
+
+.need-us .utility-button {
+  margin: 0;
+}
+/* Newsletter */
+.newsletter {
+  background-color: var(--navy);
+  color: white;
+}
+.newsletter h2 {
+  color: white;
+}
+.sign-up-form {
+  display: flex;
+  align-items: center;
+}
+.sign-up-form input {
+  border: none;
+  border-right: 1px solid var(--navy);
+  width: auto;
+}
+.sign-up-btn {
+  border: none;
+  background-color: white;
+  width: 4.25rem;
+  height: 2.5rem;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  color: var(--offBlack);
+}
+
+/* Footer */
+.footer-body{
+  padding: 3rem 1.5rem;
+}
+.footer-nav{
+  margin: 2rem 0;
+}
+.nav-items {
+  line-height: 33px;
+}
+.company-email a{
+  text-decoration: none;
+  color:var(--offBlack);
+  border-bottom: 2px solid var(--yellow);
+}
+.copyright{
+  background-color: var(--navy);
+  color: white;
+}
+.copyright p{
+  padding: 0;
+}
+footer .inner-container{
+  padding: 2rem 1.5rem;
+}
