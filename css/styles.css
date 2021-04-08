@@ -37,7 +37,7 @@ h3 {
   font-size: 1.25rem;
   font-weight: bold;
 }
-h4{
+h4 {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -49,6 +49,12 @@ p {
 }
 
 /* Header */
+header {
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
 .hamburger-btn {
   background-color: var(--yellow);
   border-radius: 50%;
@@ -179,10 +185,9 @@ article:last-of-type {
 .row {
   display: flex;
   overflow: scroll;
-  scrollbar-width: none; 
- 
+  scrollbar-width: none;
 }
-.row::-webkit-scrollbar{
+.row::-webkit-scrollbar {
   background: transparent;
   width: 0;
 }
@@ -231,6 +236,7 @@ article:last-of-type {
 }
 .card img {
   border-radius: 10px 10px 0 0;
+  width: 100%;
 }
 .card-body {
   padding: 1.2rem 0.5rem 0.5rem;
@@ -254,12 +260,11 @@ article:last-of-type {
 .sign-up-form input {
   border: none;
   border-right: 1px solid var(--navy);
-  width: auto;
 }
 .sign-up-btn {
   border: none;
   background-color: white;
-  width: 4.25rem;
+  min-width: 4.25rem;
   height: 2.5rem;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
@@ -267,27 +272,72 @@ article:last-of-type {
 }
 
 /* Footer */
-.footer-body{
+.footer-body {
   padding: 3rem 1.5rem;
 }
-.footer-nav{
+.footer-nav {
   margin: 2rem 0;
 }
 .nav-items {
   line-height: 33px;
 }
-.company-email a{
+.company-email a {
   text-decoration: none;
-  color:var(--offBlack);
+  color: var(--offBlack);
   border-bottom: 2px solid var(--yellow);
 }
-.copyright{
+.copyright {
   background-color: var(--navy);
   color: white;
 }
-.copyright p{
+.copyright p {
   padding: 0;
 }
-footer .inner-container{
+footer .inner-container {
   padding: 2rem 1.5rem;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 750px) {
+  /* Articles */
+  .articles {
+    background-color: var(--navy);
+    border-radius: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  article {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 3rem;
+    flex: 0 0 48.5%;
+    /* width: 48.29%; */
+  }
+
+  article:nth-of-type(1),
+  article:nth-of-type(2) {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Cards */
+  .card {
+    display: flex;
+    align-items: center;
+  }
+
+  .card img {
+    border-radius: 10px 0 0 10px;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-nav {
+    margin: 2rem 3.5rem 0 0;
+  }
 }
