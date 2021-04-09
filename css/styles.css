@@ -15,7 +15,7 @@ body {
 }
 
 .inner-container {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 3rem 1.5rem;
 }
 .flex {
@@ -55,6 +55,9 @@ header {
   position: -webkit-sticky;
   top: 0;
 }
+header .inner-container{
+  padding:0;
+}
 .hamburger-btn {
   background-color: var(--yellow);
   border-radius: 50%;
@@ -68,9 +71,11 @@ svg {
   display: inline-block;
   vertical-align: middle;
 }
+header {
+  box-shadow: 0px 6px 4px -4px var(--bgGrey);
+}
 header div.flex {
   padding: 0.5rem 0.8125rem 0.5rem 1.5rem;
-  box-shadow: 0px 3px 3px 0px var(--bgGrey);
 }
 header nav li {
   border-bottom: 1px solid var(--borderGrey);
@@ -186,6 +191,7 @@ article:last-of-type {
   display: flex;
   overflow: scroll;
   scrollbar-width: none;
+  width: 100%;
 }
 .row::-webkit-scrollbar {
   background: transparent;
@@ -193,7 +199,8 @@ article:last-of-type {
 }
 
 .row:first-of-type {
-  margin: 0.5rem 0 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom:1.25rem;
 }
 .row div {
   display: flex;
@@ -300,6 +307,13 @@ footer .inner-container {
 /* Media Queries */
 
 @media only screen and (min-width: 750px) {
+  h2 {
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+  .search form {
+    margin-top: 2rem;
+  }
   /* Articles */
   .articles {
     background-color: var(--navy);
@@ -313,7 +327,6 @@ footer .inner-container {
     border-radius: 10px;
     padding-bottom: 3rem;
     flex: 0 0 48.5%;
-    /* width: 48.29%; */
   }
 
   article:nth-of-type(1),
@@ -326,18 +339,119 @@ footer .inner-container {
     display: flex;
     align-items: center;
   }
-
   .card img {
     border-radius: 10px 0 0 10px;
+    min-width: 370px;
+    height: 100%;
   }
   .card-body {
     padding: 1.5rem;
   }
+
+  /* Footer */
   .wrapper {
     display: flex;
     justify-content: space-between;
   }
   .footer-nav {
     margin: 2rem 3.5rem 0 0;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .inner-container,
+  .what-we-do,
+  .footer-body {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  .hamburger-btn {
+    visibility: hidden;
+    opacity: 0;
+  }
+  header .inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  header div.flex{
+    padding:0;
+  }
+
+  .toggle-nav {
+    position: static;
+    max-height: initial;
+    width: auto;
+    background-color: white;
+  }
+  .menu {
+    display: flex;
+    border: none;
+    background-color: white;
+  }
+  .menu li {
+    border: none;
+  }
+  header nav {
+    border: none;
+    margin: 1.5rem 3rem;
+  }
+  .menu li a {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .search form,
+  .sign-up-form {
+    width: 570px;
+  }
+  /* Gallery */
+  .gallery .row{
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+
+  /* Network */
+  .network .inner-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .philosophy {
+    padding-right: 1.5rem;
+  }
+  .gallery .row {
+    overflow: unset;
+  }
+
+  /* Need Us */
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card{
+    max-width:370px;
+    flex-flow: column;
+    
+  }
+  .card img{
+    border-radius: 10px 10px 0 0 ;
+  }
+
+  /* Footer */
+  .footer-body{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-body a {
+    flex: 1 1 25%;
+  }
+  .footer-nav{
+    margin-right: 7.5rem;
+  }
+  .wrapper{
+    flex: 1 1 75%;
   }
 }
