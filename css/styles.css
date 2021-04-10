@@ -128,7 +128,8 @@ input {
   cursor: pointer;
 }
 .search form {
-  margin-top: 3px;
+  margin-top: 6px;
+  display: flex;
 }
 
 /* Section Network */
@@ -197,30 +198,19 @@ article:last-of-type {
   background: transparent;
   width: 0;
 }
-
 .row:first-of-type {
   margin-top: 0.5rem;
   margin-bottom: 1.25rem;
 }
 .row div {
   display: flex;
-  margin-right: 1.5rem;
-}
-.row div:first-of-type {
-  flex: 0 0 198px;
-}
-.row div:nth-of-type(2) {
-  flex: 0 0 235px;
-}
-.row div:nth-of-type(3) {
-  flex: 0 0 208px;
-}
-.row div:nth-of-type(4) {
-  flex: 0 0 227px;
+  margin-right: 1rem;
+  flex: 0 0 210px;
 }
 .row div p {
   color: var(--navy);
   font-weight: bold;
+  padding: 0;
 }
 .row div img {
   border-radius: 10px;
@@ -303,31 +293,40 @@ article:last-of-type {
 footer .inner-container {
   padding: 2rem 1.5rem;
 }
+
 /*  Form page*/
 .step {
   padding: 1rem 0;
 }
-.form {
+.form form {
   background-color: var(--navy);
 }
-.form-title {
+.form .inner-container {
+  padding-top: 0.5rem;
+}
+.form .form-title {
   padding: 3rem 0;
   background-image: url(../img/form-bg-sm.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
+  background-size: cover;
 }
 
 .form form {
   color: white;
 }
+.form form label {
+  font-weight: bold;
+}
 .input-group {
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .form form input,
 .form textarea {
   border-radius: 10px;
   margin-top: 0.25rem;
+  border: 1px solid var(--borderGrey);
 }
 .input-group span {
   color: red;
@@ -338,7 +337,7 @@ footer .inner-container {
   min-height: 350px;
   padding: 0.5rem;
 }
-.form button{
+.form button {
   color: var(--navy);
   background-color: var(--yellow);
   padding: 1rem 1.5rem 1rem 3.5rem;
@@ -349,10 +348,9 @@ footer .inner-container {
   background-image: url(../img/arrow.svg);
   background-size: 26px;
   background-repeat: no-repeat;
-
   background-position: 1.5rem center;
-  
   border: 1px solid var(--yellow);
+  margin-top: 1.5rem;
 }
 
 /* Media Queries */
@@ -407,8 +405,37 @@ footer .inner-container {
   .footer-nav {
     margin: 2rem 3.5rem 0 0;
   }
-}
 
+  /* Form Page  */
+  .how-it-works {
+    height: 425px;
+  }
+  .steps {
+    display: flex;
+    flex-flow: column wrap;
+    height: 18rem;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+  .step {
+    width: 45%;
+  }
+  .form .form-title {
+    background-image: url(../img/form-bg-md.jpg);
+  }
+
+  .input-groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .input-group {
+    flex: 0 0 48%;
+  }
+  .form textarea {
+    min-height: 174px;
+  }
+}
 @media only screen and (min-width: 1240px) {
   .inner-container,
   .what-we-do,
@@ -502,5 +529,27 @@ footer .inner-container {
   }
   .wrapper {
     flex: 1 1 75%;
+  }
+
+  /* Form Page */
+  .steps {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: fit-content;
+  }
+  .how-it-works {
+    height: fit-content;
+  }
+
+  .step {
+    margin-right: 1.5rem;
+  }
+  .form textarea {
+    display: block;
+    width: 48%;
+    min-height: 226px;
+  }
+  .form .form-title {
+    background-image: url(../img/form-bg-lg.jpg);
   }
 }

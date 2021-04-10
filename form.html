@@ -50,24 +50,27 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="how-it-works">
         <div class="inner-container">
             <h2>How it works.</h2>
-            <div class="step">
-                <h3>Step1</h3>
-                <p>Tell us a little about your project and requirements.</p>
-            </div>
-            <div class="step">
-                <h3>Step2</h3>
-                <p>Let us craft out a plan for your specific needs.</p>
-            </div>
-            <div class="step">
-                <h3>Step3</h3>
-                <p>Let us assemble a team that best supports your needs.</p>
-            </div>
-            <div class="step">
-                <h3>Step4</h3>
-                <p>Build innovative solutions to advance your business.</p>
+            <div class="steps">
+
+                <div class="step">
+                    <h3>Step1</h3>
+                    <p>Tell us a little about your project and requirements.</p>
+                </div>
+                <div class="step">
+                    <h3>Step2</h3>
+                    <p>Let us craft out a plan for your specific needs.</p>
+                </div>
+                <div class="step">
+                    <h3>Step3</h3>
+                    <p>Let us assemble a team that best supports your needs.</p>
+                </div>
+                <div class="step">
+                    <h3>Step4</h3>
+                    <p>Build innovative solutions to advance your business.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -79,61 +82,65 @@
             </div>
         </div>
 
-        <div class="inner-container">
-            <form>
+        <form>
+            <div class="inner-container">
                 <p>Fill out the fields below and describe your needs.</p>
 
-                <div class="input-group">
-                    <label for="name">Name/Surname <span>*</span></label>
-                    <input type="text" id="name">
+                <div class="input-groups">
+
+                    <div class="input-group">
+                        <label for="name">Name/Surname <span>*</span></label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="company">Company <span>*</span></label>
+                        <input type="text" id="company">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tel">Tel <span>*</span></label>
+                        <input type="text" id="tel">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="url">Website Url</label>
+                        <input type="url" id="url">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="budget">Budget</label>
+                        <input type="number" id="budget" placeholder="$3,000 - $6,000" min="3000" max="6000" step="100">
+                    </div>
                 </div>
 
-                <div class="input-group">
-                    <label for="company">Company <span>*</span></label>
-                    <input type="text" id="company">
-                </div>
 
-                <div class="input-group">
-                    <label for="tel">Tel <span>*</span></label>
-                    <input type="text" id="tel">
-                </div>
 
-                <div class="input-group">
-                    <label for="city">City</label>
-                    <input type="text" id="city">
-                </div>
-
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                </div>
-
-                <div class="input-group">
-                    <label for="url">Website Url</label>
-                    <input type="url" id="url">
-                </div>
-
-                <div class="input-group">
-                    <label for="budget">Budget</label>
-                    <input type="number" id="budget" placeholder="$3,000 - $6,000" min="3000" max="6000" step="100">
-                </div>
                 <div class="input-group">
                     <label for="description">Project Description</label>
                     <textarea name="description" id="description" placeholder="In 250 words or less."></textarea>
                 </div>
-              
-                    <button>Send.</button>
-            </form>
-        </div>
+
+                <button>Send.</button>
+            </div>
+        </form>
     </section>
 
     <footer>
         <section class="footer-body">
-            <!-- <div class="inner-container"> -->
             <h3 class="sr-only">UpChances</h3>
             <a href="index.html"><img src="img/logo.png" alt="UpChances Company logo"></a>
             <div class="wrapper">
-
                 <div class="footer-nav">
                     <nav>
                         <h4>Company</h4>
@@ -166,7 +173,6 @@
                     </nav>
                 </div>
             </div>
-            <!-- </div> -->
         </section>
         <div class="copyright">
             <div class="inner-container">
