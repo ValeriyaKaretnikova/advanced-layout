@@ -55,8 +55,8 @@ header {
   position: -webkit-sticky;
   top: 0;
 }
-header .inner-container{
-  padding:0;
+header .inner-container {
+  padding: 0;
 }
 .hamburger-btn {
   background-color: var(--yellow);
@@ -200,7 +200,7 @@ article:last-of-type {
 
 .row:first-of-type {
   margin-top: 0.5rem;
-  margin-bottom:1.25rem;
+  margin-bottom: 1.25rem;
 }
 .row div {
   display: flex;
@@ -303,6 +303,57 @@ article:last-of-type {
 footer .inner-container {
   padding: 2rem 1.5rem;
 }
+/*  Form page*/
+.step {
+  padding: 1rem 0;
+}
+.form {
+  background-color: var(--navy);
+}
+.form-title {
+  padding: 3rem 0;
+  background-image: url(../img/form-bg-sm.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+}
+
+.form form {
+  color: white;
+}
+.input-group {
+  margin-bottom: 1.5rem;
+}
+.form form input,
+.form textarea {
+  border-radius: 10px;
+  margin-top: 0.25rem;
+}
+.input-group span {
+  color: red;
+}
+.form textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 350px;
+  padding: 0.5rem;
+}
+.form button{
+  color: var(--navy);
+  background-color: var(--yellow);
+  padding: 1rem 1.5rem 1rem 3.5rem;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-image: url(../img/arrow.svg);
+  background-size: 26px;
+  background-repeat: no-repeat;
+
+  background-position: 1.5rem center;
+  
+  border: 1px solid var(--yellow);
+}
 
 /* Media Queries */
 
@@ -377,8 +428,8 @@ footer .inner-container {
     justify-content: space-between;
     padding: 0;
   }
-  header div.flex{
-    padding:0;
+  header div.flex {
+    padding: 0;
   }
 
   .toggle-nav {
@@ -408,11 +459,10 @@ footer .inner-container {
     width: 570px;
   }
   /* Gallery */
-  .gallery .row{
+  .gallery .row {
     width: 100%;
     justify-content: space-between;
   }
-  
 
   /* Network */
   .network .inner-container {
@@ -431,27 +481,26 @@ footer .inner-container {
     display: flex;
     justify-content: space-between;
   }
-  .card{
-    max-width:370px;
+  .card {
+    max-width: 370px;
     flex-flow: column;
-    
   }
-  .card img{
-    border-radius: 10px 10px 0 0 ;
+  .card img {
+    border-radius: 10px 10px 0 0;
   }
 
   /* Footer */
-  .footer-body{
+  .footer-body {
     display: flex;
     justify-content: space-between;
   }
   .footer-body a {
     flex: 1 1 25%;
   }
-  .footer-nav{
+  .footer-nav {
     margin-right: 7.5rem;
   }
-  .wrapper{
+  .wrapper {
     flex: 1 1 75%;
   }
 }

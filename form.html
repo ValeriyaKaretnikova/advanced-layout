@@ -13,115 +13,127 @@
 
 <body>
     <header>
-        <div class="flex">
-            <div class="company-logo">
-                <h1 class="sr-only">UpChances</h1>
-                <a href="index.html"><img src="img/logo.png" alt="UpChances Company logo"></a>
+        <div class="inner-container">
+            <div class="flex">
+                <div class="company-logo">
+                    <h1 class="sr-only">UpChances</h1>
+                    <a href="index.html"><img src="img/logo.png" alt="UpChances Company logo"></a>
+                </div>
+                <button class="hamburger-btn">
+                    <svg viewBox="0 0 100 100" width="28" height="28">
+                        <rect y="23" width="100" height="7.15"></rect>
+                        <rect y="46" width="100" height="7.15"></rect>
+                        <rect y="69" width="100" height="7.15"></rect>
+                    </svg>
+                </button>
             </div>
-            <button class="hamburger-btn">
-                <svg viewBox="0 0 100 100" width="28" height="28">
-                    <rect y="23" width="100" height="7.15"></rect>
-                    <rect y="46" width="100" height="7.15"></rect>
-                    <rect y="69" width="100" height="7.15"></rect>
-                </svg>
-            </button>
-        </div>
-        <div class="toggle-nav">
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">How it Works</a>
-                    </li>
-                    <li>
-                        <a href="#">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="toggle-nav">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">How it Works</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <section>
-        <h2>How it works.</h2>
-        <div class="step">
-            <h3>Step1</h3>
-            <p>Tell us a little about your project and requirements.</p>
-        </div>
-        <div class="step">
-            <h3>Step2</h3>
-            <p>Let us craft out a plan for your specific needs.</p>
-        </div>
-        <div class="step">
-            <h3>Step3</h3>
-            <p>Let us assemble a team that best supports your needs.</p>
-        </div>
-        <div class="step">
-            <h3>Step4</h3>
-            <p>Build innovative solutions to advance your business.</p>
+        <div class="inner-container">
+            <h2>How it works.</h2>
+            <div class="step">
+                <h3>Step1</h3>
+                <p>Tell us a little about your project and requirements.</p>
+            </div>
+            <div class="step">
+                <h3>Step2</h3>
+                <p>Let us craft out a plan for your specific needs.</p>
+            </div>
+            <div class="step">
+                <h3>Step3</h3>
+                <p>Let us assemble a team that best supports your needs.</p>
+            </div>
+            <div class="step">
+                <h3>Step4</h3>
+                <p>Build innovative solutions to advance your business.</p>
+            </div>
         </div>
     </section>
 
-    <section class="banner">
-        <h2>Project Form</h2>
-        <form>
-            <p>Fill out the fields below and describe your needs.</p>
+    <section class="form">
+        <div class="form-title">
+            <div class="inner-container">
+                <h2>Project Form</h2>
+            </div>
+        </div>
 
-            <div class="input-group">
-                <label for="name">Name/Surname<span>*</span></label>
-                <input type="text" id="name">
-            </div>
+        <div class="inner-container">
+            <form>
+                <p>Fill out the fields below and describe your needs.</p>
 
-            <div class="input-group">
-                <label for="company">Company<span>*</span></label>
-                <input type="text" id="company">
-            </div>
+                <div class="input-group">
+                    <label for="name">Name/Surname <span>*</span></label>
+                    <input type="text" id="name">
+                </div>
 
-            <div class="input-group">
-                <label for="tel">Tel<span>*</span></label>
-                <input type="text" id="tel">
-            </div>
+                <div class="input-group">
+                    <label for="company">Company <span>*</span></label>
+                    <input type="text" id="company">
+                </div>
 
-            <div class="input-group">
-                <label for="city">City</label>
-                <input type="text" id="city">
-            </div>
+                <div class="input-group">
+                    <label for="tel">Tel <span>*</span></label>
+                    <input type="text" id="tel">
+                </div>
 
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-            </div>
+                <div class="input-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
 
-            <div class="input-group">
-                <label for="url">Website Url</label>
-                <input type="url" id="url">
-            </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
 
-            <div class="input-group">
-                <label for="budget">Budget</label>
-                <input type="number" id="budget">
-            </div>
-            <div class="input-group">
-                <label for="description">Project Description</label>
-                <textarea name="description" id="description"></textarea>
-            </div>
-            <div class="button">
-                <input type="submit" value="Send">
-            </div>
-        </form>
+                <div class="input-group">
+                    <label for="url">Website Url</label>
+                    <input type="url" id="url">
+                </div>
+
+                <div class="input-group">
+                    <label for="budget">Budget</label>
+                    <input type="number" id="budget" placeholder="$3,000 - $6,000" min="3000" max="6000" step="100">
+                </div>
+                <div class="input-group">
+                    <label for="description">Project Description</label>
+                    <textarea name="description" id="description" placeholder="In 250 words or less."></textarea>
+                </div>
+              
+                    <button>Send.</button>
+            </form>
+        </div>
     </section>
 
     <footer>
         <section class="footer-body">
             <!-- <div class="inner-container"> -->
-                <h3 class="sr-only">UpChances</h3>
-                <a href="index.html"><img src="img/logo.png" alt="UpChances Company logo"></a>
+            <h3 class="sr-only">UpChances</h3>
+            <a href="index.html"><img src="img/logo.png" alt="UpChances Company logo"></a>
+            <div class="wrapper">
+
                 <div class="footer-nav">
                     <nav>
                         <h4>Company</h4>
@@ -153,6 +165,7 @@
                         </ul>
                     </nav>
                 </div>
+            </div>
             <!-- </div> -->
         </section>
         <div class="copyright">
