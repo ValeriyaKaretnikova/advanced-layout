@@ -10,12 +10,11 @@
 body {
   background-color: #fff;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--offBlack);
 }
 
 .inner-container {
-  /* margin: 0 auto; */
   padding: 3rem 1.5rem;
 }
 .flex {
@@ -30,7 +29,7 @@ h2 {
   font-size: 2.25rem;
   font-weight: bold;
   color: var(--navy);
-  line-height: 39.6px;
+  line-height: 2.5rem;
 }
 h3 {
   color: var(--navy);
@@ -39,7 +38,7 @@ h3 {
 }
 h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: var(--navy);
   margin-bottom: 1rem;
@@ -101,7 +100,7 @@ header nav {
   text-decoration: none;
   color: var(--navy);
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   line-height: 2;
   padding-left: 1.5rem;
@@ -109,7 +108,6 @@ header nav {
 }
 
 /* Banner Search */
-
 input {
   width: 100%;
   border-radius: 10px 0 0 10px;
@@ -128,7 +126,7 @@ input {
   cursor: pointer;
 }
 .search form {
-  margin-top: 6px;
+  margin-top: 0.375rem;
   display: flex;
 }
 
@@ -142,8 +140,8 @@ input {
   color: white;
 }
 a svg {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   fill: var(--navy);
 }
 .utility-button {
@@ -157,7 +155,7 @@ a svg {
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   display: inline-block;
 }
 
@@ -172,7 +170,7 @@ article {
 article a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--navy);
   border-bottom: 2px solid var(--yellow);
 }
@@ -205,7 +203,7 @@ article:last-of-type {
 .row div {
   display: flex;
   margin-right: 1rem;
-  flex: 0 0 210px;
+  flex: 0 0 13.125rem;
 }
 .row div p {
   color: var(--navy);
@@ -276,7 +274,7 @@ article:last-of-type {
   margin: 2rem 0;
 }
 .nav-items {
-  line-height: 33px;
+  line-height: 2rem;
 }
 .company-email a {
   text-decoration: none;
@@ -306,7 +304,7 @@ footer .inner-container {
 }
 .form .form-title {
   padding: 3rem 0;
-  background-image: url(../img/form-bg-sm.jpg);
+  background-image: url(../img/form-page/form-bg-sm.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
@@ -327,6 +325,15 @@ footer .inner-container {
   border-radius: 10px;
   margin-top: 0.25rem;
   border: 1px solid var(--borderGrey);
+
+}
+.form form input:invalid {
+  border: 1px solid red;
+}
+.form form input:valid {
+  background-image: url(../img/form-page/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.875rem center;
 }
 .input-group span {
   color: red;
@@ -344,9 +351,9 @@ footer .inner-container {
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 18px1.125rem;
   background-image: url(../img/arrow.svg);
-  background-size: 26px;
+  background-size: 1.625rem;
   background-repeat: no-repeat;
   background-position: 1.5rem center;
   border: 1px solid var(--yellow);
@@ -357,8 +364,8 @@ footer .inner-container {
 
 @media only screen and (min-width: 750px) {
   h2 {
-    font-size: 48px;
-    line-height: 52.8px;
+    font-size: 3rem;
+    line-height: 3.3rem;
   }
   .search form {
     margin-top: 2rem;
@@ -419,9 +426,10 @@ footer .inner-container {
   }
   .step {
     width: 45%;
+    height:50%;
   }
   .form .form-title {
-    background-image: url(../img/form-bg-md.jpg);
+    background-image: url(../img/form-page/form-bg-md.jpg);
   }
 
   .input-groups {
@@ -478,7 +486,7 @@ footer .inner-container {
     margin: 1.5rem 3rem;
   }
   .menu li a {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1;
   }
   .search form,
@@ -522,13 +530,10 @@ footer .inner-container {
     justify-content: space-between;
   }
   .footer-body a {
-    flex: 1 1 25%;
+    flex: 0 0 20%;
   }
   .footer-nav {
-    margin-right: 7.5rem;
-  }
-  .wrapper {
-    flex: 1 1 75%;
+    margin: 0 7.5rem;
   }
 
   /* Form Page */
@@ -550,6 +555,6 @@ footer .inner-container {
     min-height: 226px;
   }
   .form .form-title {
-    background-image: url(../img/form-bg-lg.jpg);
+    background-image: url(../img/form-page/form-bg-lg.jpg);
   }
 }
