@@ -7,4 +7,4 @@ scroll background, and semantic forms.
 
 Design by my amazing instructor [Bridgette Connell](https://github.com/bconnell3) 
 
-[Link to the website](https://app.netlify.com/sites/web-design-2-advanced-layout/overview)
+[Link to the website](https://web-design-2-advanced-layout.netlify.app/)
